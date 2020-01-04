@@ -1,0 +1,117 @@
+# Art
+dalvik.vm.boot-dex2oat-threads=4
+dalvik.vm.checkjni=false
+dalvik.vm.dex2oat-flags=--no-watch-dog
+dalvik.vm.dex2oat-threads=4
+dalvik.vm.image-dex2oat-threads=4
+dalvik.vm.verify-bytecode=false
+persist.sys.purgeable_assets=1
+
+# Audio
+audio.offload.disable=true
+audio.offload.video=false
+
+persist.audio.calfile0=/etc/Bluetooth_cal.acdb
+persist.audio.calfile1=/etc/General_cal.acdb
+persist.audio.calfile2=/etc/Global_cal.acdb
+persist.audio.calfile3=/etc/Handset_cal.acdb
+persist.audio.calfile4=/etc/Hdmi_cal.acdb
+persist.audio.calfile5=/etc/Headset_cal.acdb
+persist.audio.calfile6=/etc/Speaker_cal.acdb
+
+persist.vendor.audio.fluence.voicecall=true
+ro.audio.flinger_standbytime_ms=300
+ro.vendor.audio.sdk.fluencetype=fluence
+ro.vendor.audio.sdk.ssr=false
+
+ro.config.media_vol_steps=25
+ro.config.vc_call_vol_steps=7
+
+persist.vendor.audio.hw.binder.size_kbyte=1024
+ro.af.client_heap_size_kbyte=7168
+vendor.voice.path.for.pcm.voip=true
+vendor.audio.av.streaming.offload.enable=false
+vendor.audio.offload.buffer.size.kb=32
+
+# Bluetooth
+vendor.qcom.bluetooth.soc=pronto
+qcom.bt.le_dev_pwr_class=1
+ro.bluetooth.sap=true
+ro.bluetooth.dun=true
+ro.bluetooth.hfp.ver=1.6
+ro.qualcomm.bt.hci_transport=smd
+
+# Display
+debug.hwui.use_buffer_age=false
+debug.sf.enable_gl_backpressure=1
+debug.sf.latch_unsignaled=1
+debug.sf.recomputecrop=0
+persist.graphics.vulkan.disable=true
+persist.hwc.mdpcomp.enable=true
+ro.opengles.version=196608
+ro.sf.lcd_density=320
+sys.use_fifo_ui=1
+
+# GPS
+ro.gps.agps_provider=1
+ro.qc.sdk.izat.premium_enabled=1
+ro.qc.sdk.izat.service_mask=0x5
+persist.gps.qc_nlp_in_use=0
+persist.loc.nlp_name=com.qualcomm.services.location
+
+# Media
+debug.stagefright.ccodec=0
+debug.stagefright.omx_default_rank.sw-audio=1
+debug.stagefright.omx_default_rank=0
+camera2.portability.force_api=1
+
+# Memory optimizations
+ro.vendor.qti.am.reschedule_service=true
+ro.vendor.qti.sys.fw.use_trim_settings=true
+ro.vendor.qti.sys.fw.bservice_enable=true
+
+# NITZ
+persist.radio.nitz_plmn=
+persist.radio.nitz_lons_0=
+persist.radio.nitz_lons_1=
+persist.radio.nitz_lons_2=
+persist.radio.nitz_lons_3=
+persist.radio.nitz_sons_0=
+persist.radio.nitz_sons_1=
+persist.radio.nitz_sons_2=
+persist.radio.nitz_sons_3=
+
+# Qualcomm
+persist.timed.enable=true
+ro.qualcomm.cabl=0
+net.early.sockets=0
+vidc.debug.level=1
+ro.vendor.extension_library=/system/vendor/lib/libqti-perfd-client.so
+
+# Radio
+persist.data.qmi.adb_logmask=0
+persist.radio.no_wait_for_card=1
+persist.radio.add_power_save=1
+persist.radio.apm_sim_not_pwdn=1
+persist.radio.dfr_mode_set=1
+persist.radio.relay_oprt_change=1
+persist.radio.msgtunnel.start=false
+rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
+rild.libargs=-d /dev/smd0
+ro.use_data_netmgrd=true
+
+# Security patch level
+ro.lineage.build.vendor_security_patch=2016-08-01
+
+# Storage
+ro.sys.sdcardfs=true
+
+# Subsystem
+persist.sys.ssr.enable_debug=0
+
+# Wifi
+persist.sys.qc.sub.rdump.on=1
+ro.disableWifiApFirmwareReload=true
+
+# Play store
+ro.com.google.clientidbase.gmm=android-sharp
