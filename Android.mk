@@ -31,7 +31,7 @@ FIRMWARE_ADSP_IMAGES := \
     adsp.b05 adsp.b06 adsp.b07 adsp.b08 adsp.b09 \
     adsp.b10 adsp.b11 adsp.b12 adsp.mdt
 
-FIRMWARE_ADSP_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(FIRMWARE_ADSP_IMAGES)))
+FIRMWARE_ADSP_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(FIRMWARE_ADSP_IMAGES)))
 $(FIRMWARE_ADSP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "ADSP Firmware link: $@"
 	@mkdir -p $(dir $@)
@@ -55,7 +55,7 @@ ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_KEYMASTER_SYMLINKS)
 FIRMWARE_MBA_IMAGES := \
     mba.b00 mba.mdt
 
-FIRMWARE_MBA_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(FIRMWARE_MBA_IMAGES)))
+FIRMWARE_MBA_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(FIRMWARE_MBA_IMAGES)))
 $(FIRMWARE_MBA_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "MBA Firmware link: $@"
 	@mkdir -p $(dir $@)
@@ -71,7 +71,7 @@ FIRMWARE_MODEM_IMAGES := \
     modem.b20 modem.b21 modem.b22 modem.b24 modem.b25 modem.b26 \
     modem.b27 modem.mdt
 
-FIRMWARE_MODEM_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(FIRMWARE_MODEM_IMAGES)))
+FIRMWARE_MODEM_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(FIRMWARE_MODEM_IMAGES)))
 $(FIRMWARE_MODEM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Modem Firmware link: $@"
 	@mkdir -p $(dir $@)
@@ -85,7 +85,7 @@ FIRMWARE_WCNSS_IMAGES := \
     wcnss.b06 wcnss.b07 wcnss.b08 wcnss.b09 \
     wcnss.mdt
 
-FIRMWARE_WCNSS_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(FIRMWARE_WCNSS_IMAGES)))
+FIRMWARE_WCNSS_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(FIRMWARE_WCNSS_IMAGES)))
 $(FIRMWARE_WCNSS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "WCNSS Firmware link: $@"
 	@mkdir -p $(dir $@)
