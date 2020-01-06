@@ -24,6 +24,7 @@ vendor/lib/soundfx/libqcvirt.so
 bin/btnvtool:vendor/bin/btnvtool
 bin/hci_qcomm_init:vendor/bin/hci_qcomm_init
 vendor/lib/libbtnv.so
+vendor/lib/libbt-vendor.so
 
 # Camera
 # vendor/lib/libmmjpeg.so - from shamu
@@ -46,16 +47,16 @@ vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_wavelet_lib.so
-libmmcamera2_c2d_module.so
-libmmcamera2_cpp_module.so
-libmmcamera2_iface_modules.so
-libmmcamera2_imglib_modules.so
-libmmcamera2_isp_modules.so
-libmmcamera2_pproc_modules.so
-libmmcamera2_sensor_modules.so
-libmmcamera2_stats_modules.so
-libmmcamera2_vpe_module.so
-libmmcamera2_wnr_module
+vendor/lib/libmmcamera2_c2d_module.so
+vendor/lib/libmmcamera2_cpp_module.so
+vendor/lib/libmmcamera2_iface_modules.so
+vendor/lib/libmmcamera2_imglib_modules.so
+vendor/lib/libmmcamera2_isp_modules.so
+vendor/lib/libmmcamera2_pproc_modules.so
+vendor/lib/libmmcamera2_sensor_modules.so
+vendor/lib/libmmcamera2_stats_modules.so
+vendor/lib/libmmcamera2_vpe_module.so
+vendor/lib/libmmcamera2_wnr_module
 vendor/lib/libmmjpeg.so|44e479b511fe648de3aa792ca822b5d7dc2fc34a
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libqomx_jpegdec.so
@@ -95,12 +96,10 @@ etc/xtra_root_cert.pem
 lib/libloc_api_v02.so|9a8401afc86b54e73aa29995f228fd0243cee793
 lib/libloc_ds_api.so|99a6f29860dbe0ed6fe3cbfdbb2277a63850f2c0
 vendor/lib/hw/flp.default.so|c36ec0a3e6563fa8ddb96aaa7d0129249ce1d305
-vendor/lib/libflp.so|20994b3ac3ecd2094698ac98463aed97e3ce54ef
+# vendor/lib/libflp.so|20994b3ac3ecd2094698ac98463aed97e3ce54ef
 vendor/lib/libgeofence.so|953c2720c98825cdfb2757839f5f86400c11a2d5
 vendor/lib/libizat_core.so|8d1b8f5c26cc9bcdacb402e253048211a6c07ba1
 vendor/lib/liblbs_core.so|3dea19e84a0d226ea3e5c92ec169f7e0fdbe5699
-
-
 
 # Graphics - from onyx
 vendor/lib/egl/eglsubAndroid.so|b8a5790c5b4ba4cf0018c94066104610c821ed8e
@@ -112,7 +111,7 @@ vendor/lib/libC2D2.so|d34587d5143bd09f847cb6686b03461a6e62cd87
 vendor/lib/libCB.so|3d2ad5bbff1cf4019d89c38689ec2ce3c186a3c1
 vendor/lib/libOpenCL.so|2b4b9692b16729b880d7881e68208183943f9612
 vendor/lib/libadreno_utils.so|a109e06c933811c578d129c0772a612cf5d94367
-vendor/lib/libbccQTI.so|94132d5d8421428001c2201a8915949c531b0ad9
+# vendor/lib/libbccQTI.so|94132d5d8421428001c2201a8915949c531b0ad9
 vendor/lib/libc2d30-a3xx.so|3666e0bf418e7ea7480b27c2c1ddd1bc86037044
 vendor/lib/libgsl.so|fafee1adf0e89325b3a1ea83d5205c02ebf860f3
 vendor/lib/libllvm-qcom.so|fc96c949b662fb34b287a4c0aa194984fbb57d7d
@@ -147,7 +146,6 @@ vendor/lib/libSHIMDivxDrm.so
 
 # Perf
 bin/mpdecision:vendor/bin/mpdecision
-vendor/lib/libqti-perfd-client.so
 
 # Qualcomm framework
 bin/irsc_util:vendor/bin/irsc_util
@@ -166,7 +164,6 @@ vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_csvt_srvc.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
-vendor/lib/libsmemlog.so
 
 # Radio
 -app/qcrilmsgtunnel/qcrilmsgtunnel.apk
@@ -192,8 +189,8 @@ vendor/lib/libxml.so
 bin/akmd8963
 bin/sensors.qcom
 bin/sensorservice
-vendor/lib/sensor_reg.so
-vendor/lib/sensor1.so
+vendor/lib/libsensor_reg.so
+vendor/lib/libsensor1.so
 lib/hw/sensors.SG306SH.so
 lib/hw/lights.msm8226.so
 lib/hw/camera.msm8226.so
