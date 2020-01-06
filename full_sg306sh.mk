@@ -18,7 +18,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from sg306sh device
-$(call inherit-product, device/sharp/sg306sh/android_vendor_sharp_sg306sh/device.mk)
+$(call inherit-product, device/sharp/sg306sh/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sg306sh
