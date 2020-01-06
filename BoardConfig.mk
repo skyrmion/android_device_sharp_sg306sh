@@ -14,9 +14,9 @@
 # limitations under the License.
 
 # inherit from the proprietary version
--include vendor/sharp/sg306sh/android_vendor_sharp_sg306sh/BoardConfigVendor.mk
+-include vendor/sharp/sg306sh/BoardConfigVendor.mk
 
-VENDOR_PATH := device/sharp/sg306sh
+VENDOR_PATH := vendor/sharp/sg306sh
 
 BOARD_VENDOR := sharp-qcom
 
