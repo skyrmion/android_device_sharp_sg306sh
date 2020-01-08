@@ -54,8 +54,7 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 BOARD_ROOT_EXTRA_FOLDERS := firmware fsg persist
 LZMA_RAMDISK_TARGETS := recovery
-
-TARGET_KERNEL_SOURCE := TARGET_PREBUILT_KERNEL := device/sharp/sg306sh/prebuilts/zImage
+# TARGET_KERNEL_SOURCE := TARGET_PREBUILT_KERNEL := device/sharp/sg306sh/prebuilts/zImage
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-smd"
