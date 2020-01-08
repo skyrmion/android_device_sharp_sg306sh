@@ -1,4 +1,4 @@
-$(call inherit-product, device/sharp/sg306sh/android_vendor_sharp_sg306sh/full_sg306sh.mk)
+$(call inherit-product, device/sharp/sg306sh/full_sg306sh.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
