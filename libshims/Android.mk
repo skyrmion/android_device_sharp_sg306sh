@@ -17,7 +17,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_SRC_FILES := thermal.celse ifneq ($(filter sg306sh, $(TARGET_DEVICE)),)
+LOCAL_SRC_FILES := ifneq ($(filter sg306sh, $(TARGET_DEVICE)),)
 include $(call all-named-subdir-makefiles, sg306sh)
 
 LOCAL_MODULE := libshims_thermal
