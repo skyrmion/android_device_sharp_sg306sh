@@ -46,9 +46,9 @@ TARGET_USES_64_BIT_BINDER := true
 BOARD_DTBTOOL_ARGS := --force-v2
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 androidboot.selinux=permissive
-BOARD_KERNEL_IMAGE_NAME := zImage
+TARGET_KERNEL_SOURCE := kernel/sharp/sg306sh_kernel
 TARGET_KERNEL_CONFIG := pb25_defconfig
-TARGET_KERNEL_SOURCE := kernel/sharp/msm8226
+BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
